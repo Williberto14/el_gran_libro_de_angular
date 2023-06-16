@@ -23,7 +23,7 @@ var Mamifero = /** @class */ (function () {
     function Mamifero() {
     }
     Mamifero.prototype.amamantar = function () {
-        console.log("Estoy amamantando");
+        console.log("Mamifero amamantando");
     };
     ;
     return Mamifero;
@@ -33,7 +33,7 @@ var Tablet = /** @class */ (function () {
     function Tablet() {
     }
     Tablet.prototype.recargar = function () {
-        console.log("Estoy recargando");
+        console.log("Tablet recargando");
     };
     return Tablet;
 }());
@@ -43,7 +43,7 @@ var Bicicleta = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Bicicleta.prototype.pedalear = function () {
-        console.log("Estoy pedaleando");
+        console.log("Bicicleta pedaleando");
     };
     return Bicicleta;
 }(Vehiculo));
@@ -53,7 +53,10 @@ var BicicletaElectrica = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     BicicletaElectrica.prototype.recargar = function () {
-        console.log("Estoy recargando");
+        console.log("Bicicleta electrica recargando");
+    };
+    BicicletaElectrica.prototype.pedalear = function () {
+        console.log("Bicicleta electrica pedaleando");
     };
     return BicicletaElectrica;
 }(Bicicleta));
@@ -63,7 +66,7 @@ var Murcielago = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Murcielago.prototype.volar = function () {
-        console.log("Estoy volando");
+        console.log("Murcielago volando");
     };
     Murcielago.prototype.amamantar = function () {
         console.log("Soy un murcielago y estoy amamantando");
@@ -76,10 +79,10 @@ var Drone = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Drone.prototype.volar = function () {
-        console.log("Estoy volando");
+        console.log("Dron volando");
     };
     Drone.prototype.recargar = function () {
-        console.log("Estoy recargando");
+        console.log("Dron recargando");
     };
     return Drone;
 }(Vehiculo));

@@ -18,32 +18,35 @@ abstract class Mamifero {
     protected nombre: string;
     protected edad: number;
     amamantar(): void {
-        console.log("Estoy amamantando");
+        console.log("Mamifero amamantando");
     };
 }
 
 // class --------------------------
 class Tablet implements IRecargable {
     public recargar(): void {
-        console.log("Estoy recargando");
+        console.log("Tablet recargando");
     }
 }
 
 class Bicicleta extends Vehiculo {
     public pedalear(): void {
-        console.log("Estoy pedaleando");
+        console.log("Bicicleta pedaleando");
     }
 }
 
 class BicicletaElectrica extends Bicicleta implements IRecargable {
     public recargar(): void {
-        console.log("Estoy recargando");
+        console.log("Bicicleta electrica recargando");
+    }
+    public pedalear(): void {
+        console.log("Bicicleta electrica pedaleando");
     }
 }
 
 class Murcielago extends Mamifero implements IVolador {
     public volar(): void {
-        console.log("Estoy volando");
+        console.log("Murcielago volando");
     }
     amamantar(): void {
         console.log("Soy un murcielago y estoy amamantando");
@@ -52,11 +55,11 @@ class Murcielago extends Mamifero implements IVolador {
 
 class Drone extends Vehiculo implements IVolador, IRecargable {
     public volar(): void {
-        console.log("Estoy volando");
+        console.log("Dron volando");
     }
 
     public recargar(): void {
-        console.log("Estoy recargando");
+        console.log("Dron recargando");
     }
 }
 
